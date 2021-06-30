@@ -55,7 +55,7 @@ ul {
 a:hover {
     text-decoration: none;
     transition: transform .2s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color:var(--white-text);
 }
 
@@ -68,10 +68,12 @@ a:hover {
 }
 
 .about div,
+.work div,
 .resume div,
 .contact div {
     border-left: 5px solid var(--grid-background-color);
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .work {
@@ -80,6 +82,11 @@ a:hover {
     grid-template-columns: 1fr 7fr;
     grid-gap: 10px;
     color: var(--white-text);
+}
+
+#my-work{
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 h5 {
@@ -120,6 +127,10 @@ h5:hover {
     color: var(--white-text);
 }
 
+i {
+    margin: 0 20px 0 20px;
+}
+
 footer p{
     color: var(--white-text);
     text-align: center;
@@ -154,12 +165,6 @@ footer p{
 
     .container ul {
         margin-top: 30px;
-    }
-
-    .links {
-        display: flex;
-        align-self: flex-start;
-        margin-left: -50px;
     }
 
     .work-images {

@@ -1,7 +1,7 @@
 # 08-Portfolio Update
 
-For this assignment all we had to do is update our portfolios.
+This assignment is a portfolio update.
 
-I linked my assignments so far and changed the layout a bit. Very grateful for this respite.
+All passed assignments have been added and style has been changed. Very grateful for this respite.
 
 ![portfolio](./assets/portfolio-update.gif)
