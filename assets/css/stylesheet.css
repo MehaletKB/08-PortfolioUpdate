@@ -15,7 +15,7 @@ body {
 
 .jumbotron {
     background-image: url("../images/hero.jpg");
-    height: 70vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -34,9 +34,9 @@ body {
 
 #logo {
     filter: drop-shadow(0px 0px 10px rgba(31, 29, 16, 0.555));
-    max-width: 45%;
-    margin-top: clamp(2%, 5%, 7%);
-    margin-left: 30%;
+    max-width: 75%;
+    margin-top: clamp(20%, 5%, 7%);
+    margin-left: 15%;
 }
 
 h1, a {
@@ -46,14 +46,18 @@ h1, a {
 ul {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 0; 
     padding-left: 0;
-    margin-top: clamp(2%, 5%, 7%);
+    /* margin-top: clamp(2%, 5%, 7%); */
+}
+
+a {
+    text-decoration: none;
+    padding-top: 10px;
 }
 
 a:hover {
-    text-decoration: none;
     transition: transform .2s;
     transform: scale(1.1);
     color:var(--white-text);
@@ -61,32 +65,89 @@ a:hover {
 
 .about {
     display: grid;
-    padding: 10px 10px 0px 10px;
+    justify-content: space-around;
+    padding: 10px;
     grid-template-columns: 1fr 7fr;
     grid-gap: 10px;
+    height: 100vh;
     color: var(--white-text);
 }
 
+#about-content {
+    font-size: 15px;
+    padding-top: 90px;
+    padding-left: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-img {
+    height:30rem;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
 .about div,
-.work div,
-.resume div,
+/* .work div, */
 .contact div {
     border-left: 5px solid var(--grid-background-color);
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
+}
+
+button {
+    margin-top: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    width: 200px;
+}
+
+button:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+    background-color:#ffffff38
+
 }
 
 .work {
     display: grid;
     padding: 10px;
-    grid-template-columns: 1fr 7fr;
-    grid-gap: 10px;
     color: var(--white-text);
 }
 
 #my-work{
     display: grid;
     grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    margin-top: 20px
+}
+
+.card {
+    background-color: rgba(34, 73, 124, 0.247);
+    text-align: center;
+}
+
+.btn {
+    font-size: 20px;
+    margin: 20px
+}
+
+.tools {
+    margin: 10px;
+    width: 15%;
+}
+
+.tools-2 {
+    width: 25%;
 }
 
 h5 {
@@ -97,44 +158,26 @@ h5 {
     border-radius: 10px;
 }
 
-h5:hover {
-    transition: transform .2s;
-    transform: scale(1.1);
-}
-
-.carousel-indicators {
-    background-color:rgb(143, 227, 229, 0.5) !important;
-    border-radius: 10px;
-}
-
-.resume {
-    display: grid;
-    grid-template-columns: 1fr 7fr;
-    padding: 0px 10px;
-    grid-gap: 10px;
-    color: var(--white-text);
-}
-
-.resume:hover {
-    font-size:larger;
-}
-
 .contact {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 7fr;
-    padding: 10px;
+    padding: 20px;
     grid-gap: 10px;
+    font-size: 30px;
     color: var(--white-text);
 }
 
-i {
-    margin: 0 20px 0 20px;
+.contact-info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 footer p{
     color: var(--white-text);
     text-align: center;
-    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 667px){
